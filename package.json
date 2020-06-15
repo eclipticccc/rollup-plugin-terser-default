@@ -1,7 +1,7 @@
 {
-  "name": "rollup-plugin-terser",
+  "name": "rollup-plugin-terser-default",
   "version": "6.1.0",
-  "description": "Rollup plugin to minify generated es bundle",
+  "description": "rollup-plugin-terser but with default exports",
   "type": "commonjs",
   "main": "rollup-plugin-terser.js",
   "types": "rollup-plugin-terser.d.ts",
@@ -21,7 +21,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/TrySound/rollup-plugin-terser.git"
+    "url": "git+https://github.com/eclipticccc/rollup-plugin-terser-default.git"
   },
   "keywords": [
     "rollup",
