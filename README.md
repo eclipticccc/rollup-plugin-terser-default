@@ -1,7 +1,9 @@
-# rollup-plugin-terser [![Travis Build Status][travis-img]][travis]
+# rollup-plugin-terser-default [![Travis Build Status][travis-img]][travis]
 
 [travis-img]: https://travis-ci.org/TrySound/rollup-plugin-terser.svg
 [travis]: https://travis-ci.org/TrySound/rollup-plugin-terser
+
+`rollup-plugin-terser` modified for default export
 
 [Rollup](https://github.com/rollup/rollup) plugin to minify generated es bundle. Uses [terser](https://github.com/fabiosantoscode/terser) under the hood.
 
@@ -19,19 +21,13 @@ _Note: this package requires rollup@0.66 and higher (including rollup@2.0.0)_
 
 ```js
 import { rollup } from "rollup";
-import { terser } from "rollup-plugin-terser";
+import terser from "rollup-plugin-terser-default";
 
 rollup({
   input: "main.js",
   plugins: [terser()],
 });
 ```
-
-## Why named export?
-
-1. Module is a namespace. Default export often leads to function/component per file dogma and makes code less maintainable.
-2. Interop with commonjs is broken in many cases or hard to maintain.
-3. Show me any good language with default exports. It's historical javascriptism.
 
 ## Options
 
@@ -58,7 +54,7 @@ Amount of workers to spawn. Defaults to the number of CPUs minus 1.
 
 ```js
 // rollup.config.js
-import { terser } from "rollup-plugin-terser";
+import terser from "rollup-plugin-terser-default";
 
 export default {
   input: "index.js",
