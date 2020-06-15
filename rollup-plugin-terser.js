@@ -99,4 +99,5 @@ function terser(userOptions = {}) {
   };
 }
 
+module.exports = terser;
 exports.terser = terser;
