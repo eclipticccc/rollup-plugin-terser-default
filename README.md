@@ -10,9 +10,9 @@
 ## Install
 
 ```sh
-yarn add rollup-plugin-terser --dev
+yarn add rollup-plugin-terser-default --dev
 # Or with npm:
-npm i rollup-plugin-terser --save-dev
+npm i rollup-plugin-terser-default --save-dev
 ```
 
 _Note: this package requires rollup@0.66 and higher (including rollup@2.0.0)_
